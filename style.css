@@ -1,0 +1,87 @@
+body {
+  padding: 50px;
+}
+.border {
+  padding: 50px 50px 50px 50px;
+  height: 530px;
+  width: 600px;
+}
+.cities-button {
+  padding: 0 50px 50px 0;
+}
+button {
+  border: none;
+  background: white;
+  color: #ab47bd;
+  padding: 0 30px 0 0;
+  font-weight: 400;
+}
+button:hover {
+  color: #f5e9f7;
+}
+h1 {
+  color: #5b6275;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 70px;
+}
+h5 {
+  color: #5b6275;
+  font-weight: 300;
+}
+.degrees {
+  font-size: 48px;
+  font-weight: 600;
+}
+.col-6 {
+  color: #5b6275;
+}
+section {
+  text-align: center;
+  opacity: 70%;
+  padding: 20px 0;
+}
+.sun {
+  position: relative;
+  left: -200px;
+}
+.mon {
+  position: relative;
+  left: -100px;
+  top: -71px;
+}
+.tue {
+  position: relative;
+  left: 0px;
+  top: -142px;
+}
+.wed {
+  position: relative;
+  left: 100px;
+  top: -214px;
+}
+.thur {
+  position: relative;
+  left: 210px;
+  top: -286px;
+}
+input[type="submit"] {
+  color: #ab47bd;
+  background: #f5e9f7;
+  border-style: solid;
+  border-color: #ab47bd;
+  cursor: pointer;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+input[type="text"] {
+  width: 370px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: lightgray;
+}
+i {
+  position: relative;
+  left: -25px;
+  color: #ab47bd;
+}
