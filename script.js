@@ -1,11 +1,20 @@
-//function displayTemperature(response) {}
+function displayTemperature(response) {
+  console.log(response.data);
+let temperatureElement = document.querySelector("#temperature");
+let cityElement = document.querySelector("#city");
+let conditionElement = document.querySelector("#condition")
+let windElement = document.querySelector("#wind");
+temperatureElement.innerHTML =Math.round (response.data.main.temp);
+cityElement.innerHTML = response.data.name;
+conditionElement.innerHTML = response.data.weather[0].description;
+windElement.innerHTML = Math.round (response.data.wind.speed);
+}
+
+let apiKey = "d02508008068065146939cb2f3fbdbe7";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
 
 
-let apiKey = "420b6d538c4331867848a78a15adc661";
-let apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric';
-console.log(apiUrl);
-
-//axios.get(apiUrl).then(displayTemperature);
+axios.get(apiUrl).then(displayTemperature);
 
 function searching(event) {
   event.preventDefault();

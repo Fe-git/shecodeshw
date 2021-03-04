@@ -29,6 +29,11 @@ h5 {
   color: #5b6275;
   font-weight: 300;
 }
+.weatherish {
+  text-transform: capitalize;
+  color: #5b6275;
+  font-weight: 300;
+}
 .degrees {
   font-size: 48px;
   font-weight: 600;
