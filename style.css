@@ -100,3 +100,10 @@ i {
   left: -25px;
   color: #ab47bd;
 }
+.active {
+  color: black;
+  cursor: default;
+}
+.active {
+  text-decoration: none;
+}
