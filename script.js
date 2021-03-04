@@ -3,6 +3,7 @@ let temperatureElement = document.querySelector("#temperature");
 let cityElement = document.querySelector("#city");
 let conditionElement = document.querySelector("#condition")
 let windElement = document.querySelector("#wind");
+let humidityElement = document.querySelector("#humidity");
 let iconElement = document.querySelector("#icon");
 
 celciusTemperature = Math.round (response.data.main.temp);
@@ -10,9 +11,9 @@ temperatureElement.innerHTML =Math.round (celciusTemperature);
 cityElement.innerHTML = response.data.name;
 conditionElement.innerHTML = response.data.weather[0].description;
 windElement.innerHTML = Math.round (response.data.wind.speed);
+humidityElement.innerHTML = Math.round (response.data.main.humidity);
 iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
-
 
 function check(city) {
 let apiKey = "d02508008068065146939cb2f3fbdbe7";
