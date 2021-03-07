@@ -75,4 +75,44 @@ let celsiusTemperature = null;
 let celciusLink = document.querySelector("#celcius");
 celciusLink.addEventListener("click",  displayCelciusTemperature);
 
+
+
+function londonSearch(event) {
+  event.preventDefault();
+  check("london");
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = "London";
+}
+let londonLink = document.querySelector("#london-button");
+londonLink.addEventListener("click", londonSearch);
+
+
+function parisSearch(event) {
+  event.preventDefault();
+  check("paris");
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = "Paris";
+}
+let parisLink = document.querySelector("#paris-button");
+parisLink.addEventListener("click", parisSearch);
+
+function abujaSearch(event) {
+  event.preventDefault();
+  check("abuja");
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = "Abuja";
+}
+let abujaLink = document.querySelector("#abuja-button");
+abujaLink.addEventListener("click", abujaSearch);
+
+function newYorkSearch(event) {
+  event.preventDefault();
+  check("new york");
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = "New York";
+}
+let newYorkLink = document.querySelector("#ny-button");
+newYorkLink.addEventListener("click", newYorkSearch);
+
+
 check("Abuja");
