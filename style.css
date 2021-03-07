@@ -17,7 +17,10 @@ button {
   font-weight: 400;
 }
 button:hover {
-  color: #f5e9f7;
+  color: #efc7f7;
+}
+button:focus {
+  outline: none;
 }
 h1 {
   color: #5b6275;
