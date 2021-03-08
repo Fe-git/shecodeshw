@@ -59,29 +59,11 @@ section {
   opacity: 70%;
   padding: 20px 0;
 }
-.sun {
-  position: relative;
-  left: -200px;
-}
-.mon {
-  position: relative;
-  left: -100px;
-  top: -71px;
-}
-.tue {
-  position: relative;
-  left: 0px;
-  top: -142px;
-}
-.wed {
-  position: relative;
-  left: 100px;
-  top: -214px;
-}
-.thur {
-  position: relative;
-  left: 210px;
-  top: -286px;
+
+.col-2,
+icon {
+  font-size: 10px;
+  width: 20%;
 }
 input[type="submit"] {
   color: #ab47bd;
